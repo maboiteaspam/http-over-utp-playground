@@ -5,6 +5,7 @@ var net = require('net');
 var express = require('express');
 
 // this example does not work
+// it is not so simple : )
 
 var app = express();
 

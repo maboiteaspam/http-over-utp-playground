@@ -7,11 +7,11 @@ var express = require('express');
 
 // this example tries to provide more complete and workable
 // real life example.
-// Still data transport is one via UTP
+// Still data transport is done via UTP
 // but this time we take advantage of creationix/node-web module
 // to parse the http query to then handle it via a classical express app
 
-// as you ll see, it s most dirty example
+// as you ll see, it s the most dirty example
 // (i did not really wanted to write http query/response parser)
 // as a consequence it s kind of realllyy dirty and broken, HTTP responses are wrong.
 
@@ -29,7 +29,6 @@ var handler = require('./web').socketHandler(function(req,finRes){
     var res = new ServerResponse(req);
     app.handle(req, res, function(){
         console.log("*---------- sending http response")
-        console.log(res._renderHeaders())
         finRes(res.statusCode, {}, res);
     });
 });

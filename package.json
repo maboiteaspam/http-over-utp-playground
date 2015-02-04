@@ -9,7 +9,8 @@
   "author": "",
   "license": "WTFPL",
   "dependencies": {
-      "utp": "maboiteaspam/utp",
-      "node-web": "creationix/node-web"
+    "express": "^4.11.2",
+    "node-web": "creationix/node-web",
+    "utp": "maboiteaspam/utp"
   }
 }
