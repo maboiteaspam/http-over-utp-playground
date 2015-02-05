@@ -15,4 +15,4 @@ One of the motivation is the tcp hole punching difficulty.
 Seems much easier via UDP, thus,
 if we could transport HTTP via UTP we could probably enhance user freedom.
 
-Besides that, I just like to practice networking : )
+Besides that, I just like to practice network programming : )
